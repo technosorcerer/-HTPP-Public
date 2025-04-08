@@ -1,0 +1,205 @@
+The Maybe-Intro naming convention is based on the conventions established by No-Intro and Redump and adds some special rules for the identification of the hacks.
+
+
+DAT File Naming
+
+DAT File : Company* System (Media)* [Hack_Type] (Release_Date)
+
+There is a DAT file per system and per hack or language of translation.
+They are named as above. The elements with a (*) mark are optional.
+
+- Company (Optional) : The company which released the system.
+It is optional if the system is a standard used by several manufacturers.
+
+- System : The video game system the hacks are for.
+For the systems which were released under different names, only the original or the most famous name is used.
+
+- Media (Optional) : The media format if a system used different types of storage format.
+It is put in parentheses.
+
+- Hack_Type : Hacks [Hack] or Translations [T-Xx] in Xx language.
+It is put in square brackets.
+
+- Release_Date : The release date in (yyyymmdd) format.
+It is put in parentheses.
+
+The DAT files permit to identify modified video games with a ROM manager according the following rules.
+
+
+ROM Naming
+
+ROM Set : Title (Region) (Misc)* [Hack Credits Version] (Special)* [Status]*
+└ ROM : Original_Title (Region) (Misc)* [Hack Credits Version] (Special)* [Status]*
+
+
+Floppy Disk Naming
+
+Disk Set : Title (Region) (Misc)* [Hack Credits Version] (Special)* [Status]*
+├ Disk A : Original_Title (Region) (Misc)* (Disk A)* [Hack Credits Version]* (Special)* [Status]*
+├ Disk B*: Original_Title (Region) (Misc)* (Disk B)* [Hack Credits Version]* (Special)* [Status]*
+└
+
+
+Optical Disc Naming
+
+Disc Set : Title (Region) (Misc)* (Disc X)* [Hack Credits Version] (Special)* [Status]*
+├ Track N : Original_Title (Region) (Misc)* (Disc X)* (Track N)* [Hack Credits Version]* (Special)* [Status]*
+├ Track N+1*: Original_Title (Region) (Misc)* (Disc X)* (Track N+1)* [Hack Credits Version]* (Special)* [Status]*
+├
+└ CUE Sheet*: Title (Region) (Misc)* (Disc X)* [Hack Credits Version] (Special)* [Status]*
+
+
+- A ROM set contains the ROM image of a game.
+- A floppy disk set contains the disk images of a game. It is composed of as many disks as the game counts.
+- An optical disc set contains the disc image of a single game disc. It can contain several tracks and a CUE Sheet.
+The name elements are ordered as above. The elements with a (*) mark are optional.
+
+
+Title / Original Title
+
+- Title : The title of the hacked game, at the Set layer.
+- Original Title : The original title of the game, at the ROM, Disk or Track layer.
+If the first word is a common article, it is moved to the end of the title and separated with a comma.
+The subtitles and the pre-titles are separated from the main title by a hyphen "-".
+
+
+Region
+
+The region of the game.
+It is put in parentheses.
+
+
+Miscellaneous Elements (Optional)
+
+(Languages) (Version) (Development_Status) (Additional) (License)
+The miscellaneous elements are put in parentheses and ordered as above.
+
+- Languages : List of the languages of the game, when more than one language is available.
+
+- Version : The version (vX.XX) or the revision (Rev X) of the game.
+
+- Development or Commercial Status : No classical commercial releases.
+(Beta) for unfinished games which have a final release.
+(Proto) for unfinished games which do not have a final release.
+(Sample) for samples, demos, etc.
+
+- Additional : Noteworthy information about the game.
+
+- License : (Unl) for unlicensed games.
+
+
+Disc Name or Number (Optional)
+
+For the optical disc games with multiple discs, the name or the number of a disc.
+It is put in parentheses.
+
+
+Disk Name or Number / Track Number (Optional)
+
+For the floppy disk games with multiple disks, the name or the number of a disk.
+For the optical disc game images with multiple tracks, the number of a track.
+It is put in parentheses, at the Disk or Track layer only.
+
+
+Hack Name or Type
+
+The name or the type of the hack applied to the game.
+It is put in square brackets.
+
+- T-Xx : Translation in Xx language.
+The same language codes as No-Intro are used.
+T-Da for the translations in Danish
+T-De for the translations in German
+T-En for the translations in English
+T-Es for the translations in Spanish
+T-Fi for the translations in Finish
+T-Fr for the translations in French
+T-It for the translations in Italian
+T-Ja for the translations in Japanese
+T-Ko for the translations in Korean
+T-Nl for the translations in Dutch
+T-No for the translations in Norwegian
+T-Pl for the translations in Polish
+T-Pt for the translations in Portuguese
+T-Sv for the translations in Swedish
+T-Zh for the translations in Chinese
+
+- X* Hack : Hack of X type or name.
+The X description element is optional.
+
+- X* Fix : Correction of X type or name.
+The X description element is optional.
+
+- Ad : Addendum, complement to a hack
+
+- X Port : Conversion from the X system.
+
+At the Disk or Track layer, the Hack tag is only added to the disks or the tracks which were modified. The Hack tag is not added to the disks or the tracks which are left untouched.
+
+
+Hack Credits
+
+The authors of the hack.
+It is put inside the Hack square brackets, behind the Hack Name or Type element.
+The authors name is written behind "by".
+When there are more than one author, they are separated by "+" without a space.
+The release group name prevails on the name of its members.
+
+
+Hack Version
+
+The version "vX.XX" or the revision "Rev X" of the hack.
+It is put inside the Hack square brackets, behind the Hack Name or Type and the Hack Credits elements.
+
+
+Special (Optional)
+
+Noteworthy information about the hack.
+It is put in parentheses.
+
+
+Status (Optional)
+
+for incomplete hacks or translations.
+[n] when the title of the hacked game is different than its original title.
+It is put at the Set layer only.
+
+
+CUE Sheet(s) (Optional)
+
+Some optical disc game images require a CUE Sheet.
+The CUE Sheet is named as the Disc Set they belong to.
+
+
+Format (NEC PC-9801 only)
+
+For the NEC PC-9801 system, the game image format is specified as many coexist.
+It is put in parentheses, at the very end of the name, at the Set layer only.
+
+
+Documentation Naming
+
+Document (ReadMe File) : ROM/Disk/Disc_Set_Name
+└ Document (Other File)*: ROM/Disk/Disc_Set_Name - Other
+
+The original documentation of each hack is also preserved.
+The document files are renamed to match with the hack they belong to.
+
+The text files with a modified extension (such as .nfo or .diz) are changed back to .txt files.
+The complex HTML files which require sub-folders and external files are converted to unique MHTML files for convenience.
+
+
+
+File Formats
+
+Maybe-Intro uses the same file formats as No-Intro or Redump whenever it is possible.
+
+The ROM images do not have a header, unless it is essential.
+
+The Nintendo Famicom/NES is the only system whose ROM images require the extra information from a header to be played and emulated. The games are stored in iNES format. An iNES file consists of a set of ROMs with a header which defines which types of ROMs the game is composed of and what mapper is used to control them.
+
+Headers are obsolete for the other systems : NEC PC Engine, Nintendo Famicom Disk System, Nintendo Super Famicom/SNES. If a patch still requires a header to be applied, they are striped from the ROM files after the process.
+
+The optical disc images use the following format :
+- ISO+WAV with a CUE sheet for the NEC PC Engine CD-ROM² System and the Sega Mega-CD/Sega CD.
+- BIN with a CUE sheet for the Sega Saturn and the Sony PlayStation.
