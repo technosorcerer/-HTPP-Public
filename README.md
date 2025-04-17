@@ -2,8 +2,8 @@
 
 Patches here are found from all sources on the web. All archives will be in tzip format, and contain as much information as possible. The naming structure will be closely related to that of the No-Intro project.<br>
 
-HACKS NAMES: Parent - Hack (Region) (Rev) (Version) (Author)<br>
-TRANS NAMES: Parent (Region) (Rev) (Language) (Version) (Author)<br>
+HACKS NAMES: Parent - Hack (Region) (Rev) (Author) (Patch Version)<br>
+TRANS NAMES: Parent (Region) (Rev) (Language) (Author) (Patch Version)<br>
 
 in the event that a patch does not contain a proper version number, a date format will be substituted based on the author's readme.<br>
 https://datomatic.no-intro.org/stuff/The%20Official%20No-Intro%20Convention%20(20071030).pdf<br>
